@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane gridLinesVisible="true" minHeight="500.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="443.0" minHeight="10.0" prefHeight="431.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="header">
+         <children> 
+            <HBox alignment="CENTER_RIGHT" layoutX="428.0" layoutY="-20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="avatarImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"> 
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox>
+                     <children>
+                        <Label fx:id="avatarName" text="User Name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Hyperlink text="Change User" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="body" GridPane.rowIndex="1">
+         <children>
+            <TableView layoutX="51.0" layoutY="34.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
+              <columns>
+                <TableColumn editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" sortable="false" text="Phone number" />
+                <TableColumn editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" sortable="false" text="Person" />
+              </columns>
+            </TableView>
+            <VBox layoutX="588.0" layoutY="34.0" prefHeight="372.0" prefWidth="188.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="34.0">
+               <children>
+                   <Button id="startButton" fx:id="startButton" mnemonicParsing="false"  prefHeight="40.0" prefWidth="200.0" text="START">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="stopButton" fx:id="stopButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="STOP">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
