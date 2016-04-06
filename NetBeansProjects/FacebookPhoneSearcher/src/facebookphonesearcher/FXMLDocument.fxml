@@ -49,10 +49,10 @@
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="body" GridPane.rowIndex="1">
          <children>
-            <TableView layoutX="51.0" layoutY="34.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
+            <TableView fx:id="mainTable" layoutX="51.0" layoutY="34.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
               <columns>
-                <TableColumn editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" sortable="false" text="Phone number" />
-                <TableColumn editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" sortable="false" text="Person" />
+                <TableColumn fx:id="phoneColumn"  editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" sortable="false" text="Phone number" />
+                <TableColumn fx:id="personColumn"  editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" sortable="false" text="Person" />
               </columns>
             </TableView>
             <VBox layoutX="588.0" layoutY="34.0" prefHeight="372.0" prefWidth="188.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="34.0">
