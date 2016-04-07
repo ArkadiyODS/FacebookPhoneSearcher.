@@ -1,6 +1,6 @@
 package interfaces;
 
-import facebookphonesearcher.Person;
+import DataClasses.Person;
 import javafx.scene.image.Image;
 
 
